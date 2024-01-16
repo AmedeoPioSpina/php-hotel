@@ -50,6 +50,39 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <table>
+        <th>Name</th>
+        <th>Descrizione</th>
+        <th>Parking</th>
+        <th>Vote</th>
+        <th>Distance to center</th>
+        <?php foreach($hotels as $hotel){ ?>
+            <td>
+                <?php 
+                    echo $hotel["name"];
+                ?>
+            </td>
+            <td>
+                <?php 
+                    echo $hotel["description"];
+                ?>
+            </td>
+            <td>
+                <?php 
+                    echo $hotel["parking"];
+                ?>
+            </td>
+            <td>
+                <?php 
+                    echo $hotel["vote"];
+                ?>
+            </td>
+            <td>
+                <?php 
+                    echo $hotel["distance_to_center"];
+                ?>
+            </td>
+        <?php } ?>
+    </table>
 </body>
 </html>
