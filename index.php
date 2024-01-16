@@ -51,10 +51,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <form action="index.php" method="GET">
-        <input type="checkbox" name="parking_filter_status" value="true">
-        <label for="parking_filter_status">Only whit parking</label>
-        <button type="submit">Apply</button>
+    <form class="d-inline-flex align-item-center" action="index.php" method="GET">
+        <div class="input-group me-1">
+            <div class="input-group-text">
+                <input class="form-check-input mt-0" type="checkbox" name="parking_filter_status" value="true">
+            </div>
+            <label class="form-control" for="parking_filter_status">Only whit parking</label>
+        </div>
+        <button class="btn btn-primary" type="submit">Apply</button>
     </form>
 
     <table class="table">
