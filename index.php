@@ -51,7 +51,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-
     <form action="index.php" method="GET">
         <input type="checkbox" name="parking_filter_status" value="true">
         <label for="parking_filter_status">Only whit parking</label>
